@@ -1,0 +1,73 @@
+alter table touchapp.network_questions add input_type varchar(200);
+
+alter table touchapp.network_questions add input_type varchar(200);
+INSERT INTO network_questions (question,network_mode,options,timestamp,input_type)
+VALUES ("what are your intrests ?","business network","1","1673871887","null");
+
+INSERT INTO network_questions (question,network_mode,options,timestamp,input_type)
+VALUES ("what are your intrests ?","friendship","1","1673871887","null");
+
+
+
+INSERT INTO network_options (name,question_id)
+VALUES ("Sports",38);
+
+ Sports
+Travelling
+ Filims & TV
+ Reading books
+ Music
+ Pets
+ Food & Drinks
+
+db.query("select network_questions.id as que_id,
+question,
+network_mode,
+options,
+timestamp,
+network_options.id
+,name,
+question_id 
+from network_questions 
+left join network_options ON network_questions.id = network_options.question_id where network_mode = ?"
+,mode,(error, result) => {
+            try {
+
+'37', 'what are your intrests ?', 'friendship', '1', '1673871887'
+'38', 'what are your intrests ?', 'business network', '1', '1673871889'
+'36', 'When are you available ?', 'job network', '1', '1673871883'
+16738718831673871883
+
+'26', 'What is your skill?', 'job network', '0', '1673861792'
+'38', 'what are your intrests ?', 'business network', '1', '1673871889'
+
+
+'37', 'what are your intrests ?', 'friendship', '1', '1673871887'
+'1', 'Profile picture', 'friendship', '0', '1673858429'
+
+
+
+db changes
+
+msg_img===>create table 
+id autooincrement
+userid int
+image varchar(200)
+
+
+register
+users
+mobile nd email remove unique and notnull
+
+
+
+
+
+
+
+
+
+
+
+
+
